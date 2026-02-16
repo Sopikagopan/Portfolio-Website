@@ -1,0 +1,61 @@
+/* =========================================
+   THEMES & VARIABLES
+   ========================================= */
+
+:root {
+    /* --- COLORS (Light Mode Default) --- */
+    --primary-hue: 250;
+    --secondary-hue: 190;
+
+    --color-primary: hsl(var(--primary-hue), 100%, 65%);
+    --color-primary-dark: hsl(var(--primary-hue), 100%, 50%);
+    --color-secondary: hsl(var(--secondary-hue), 100%, 50%);
+
+    --color-bg: #f8f9fa;
+    --color-bg-card: #ffffff;
+    --color-bg-contrast: #121212;
+
+    --color-text-main: #2d3436;
+    --color-text-muted: #636e72;
+    --color-text-light: #ffffff;
+
+    --color-border: rgba(0, 0, 0, 0.1);
+
+    /* --- TYPOGRAPHY --- */
+    --font-main: 'Outfit', sans-serif;
+    /* Modern, clean */
+    --font-heading: 'Space Grotesk', sans-serif;
+    /* Tech/AI feel */
+
+    /* --- SPACING & SIZES --- */
+    --header-height: 4.5rem;
+    --border-radius: 1rem;
+    --container-width: 1100px;
+
+    /* --- SHADOWS --- */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.15);
+
+    /* --- TRANSITIONS --- */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+    --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* --- DARK MODE --- */
+[data-theme="dark"] {
+    --color-bg: #0a0a0b;
+    /* Deep almost black */
+    --color-bg-card: #161618;
+    --color-bg-contrast: #ffffff;
+
+    --color-text-main: #f1f2f6;
+    --color-text-muted: #b2bec3;
+
+    --color-border: rgba(255, 255, 255, 0.08);
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.5);
+}
